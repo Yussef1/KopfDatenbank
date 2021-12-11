@@ -1,0 +1,9 @@
+General:
+  Prefix: '&8[&c&lKopfDatenbank&8] &7'
+  NoPermissionMessage: '%prefix%&cDazu hast du keine Berechtigung.'
+  SenderIsConsole: 'Dies kannst du als Konsole nicht.'
+  Permission: kopfdatenbank.command
+HeadDatabase:
+  AutoCloseInventory: false
+  ShowChatMessage: true
+  ShowInfoSearchMessage: true

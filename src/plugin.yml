@@ -1,0 +1,17 @@
+name: KopfDatenbank
+main: de.yussef.headdatabase.HeadDatabase
+author: JavaEnvironment
+api-version: 1.13
+version: 1.0
+description: Ein Plugin was dir ermöglicht auf all mögliche Minecraft Köpfe zuzugreifen.
+
+commands:
+  HDB:
+    aliases:
+      - kopfdatenbank
+      - kdb
+      - headdatabase
+      - hdb
+      - heads
+      - headatabase
+    description: Oeffne das Kategorien Menue.

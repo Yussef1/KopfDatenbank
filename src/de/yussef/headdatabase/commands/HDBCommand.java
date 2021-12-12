@@ -50,15 +50,15 @@ public class HDBCommand implements CommandExecutor {
 
             try {
                 fetcher.saveCategory(fetcher.alphabetUrl, HDBInventoryListener.categories[0]);
-                fetcher.saveCategory(fetcher.animalsUrl, HDBInventoryListener.categories[1]);
-                fetcher.saveCategory(fetcher.blocksUrl, HDBInventoryListener.categories[2]);
-                fetcher.saveCategory(fetcher.decorationUrl, HDBInventoryListener.categories[3]);
-                fetcher.saveCategory(fetcher.food_drinksUrl, HDBInventoryListener.categories[4]);
-                fetcher.saveCategory(fetcher.humanoidsUrl, HDBInventoryListener.categories[5]);
-                fetcher.saveCategory(fetcher.humansUrl, HDBInventoryListener.categories[6]);
-                fetcher.saveCategory(fetcher.miscellaneousUrl, HDBInventoryListener.categories[7]);
-                fetcher.saveCategory(fetcher.monstersUrl, HDBInventoryListener.categories[8]);
-                fetcher.saveCategory(fetcher.plantsUrl, HDBInventoryListener.categories[9]);
+                fetcher.saveCategory(fetcher.blocksUrl, HDBInventoryListener.categories[1]);
+                fetcher.saveCategory(fetcher.decorationUrl, HDBInventoryListener.categories[2]);
+                fetcher.saveCategory(fetcher.food_drinksUrl, HDBInventoryListener.categories[3]);
+                fetcher.saveCategory(fetcher.humanoidsUrl, HDBInventoryListener.categories[4]);
+                fetcher.saveCategory(fetcher.humansUrl, HDBInventoryListener.categories[5]);
+                fetcher.saveCategory(fetcher.monstersUrl, HDBInventoryListener.categories[6]);
+                fetcher.saveCategory(fetcher.plantsUrl, HDBInventoryListener.categories[7]);
+                fetcher.saveCategory(fetcher.miscellaneousUrl, HDBInventoryListener.categories[8]);
+                fetcher.saveCategory(fetcher.animalsUrl, HDBInventoryListener.categories[9]);
                 fetcher.saveCategory(null, HDBInventoryListener.categories[10]);
 
                 player.sendMessage(ConfigMessages.HDB_PREFIX + "Abgeschlossen! Alle JSON Datein wurde erfolgreich heruntergeladen.");

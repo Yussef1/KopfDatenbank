@@ -71,15 +71,15 @@ public class Fetcher {
 
         try {
             saveCategory(alphabetUrl, HDBInventoryListener.categories[0]);
-            saveCategory(animalsUrl, HDBInventoryListener.categories[1]);
-            saveCategory(blocksUrl, HDBInventoryListener.categories[2]);
-            saveCategory(decorationUrl, HDBInventoryListener.categories[3]);
-            saveCategory(food_drinksUrl, HDBInventoryListener.categories[4]);
-            saveCategory(humanoidsUrl, HDBInventoryListener.categories[5]);
-            saveCategory(humansUrl, HDBInventoryListener.categories[6]);
-            saveCategory(miscellaneousUrl, HDBInventoryListener.categories[7]);
-            saveCategory(monstersUrl, HDBInventoryListener.categories[8]);
-            saveCategory(plantsUrl, HDBInventoryListener.categories[9]);
+            saveCategory(blocksUrl, HDBInventoryListener.categories[1]);
+            saveCategory(decorationUrl, HDBInventoryListener.categories[2]);
+            saveCategory(food_drinksUrl, HDBInventoryListener.categories[3]);
+            saveCategory(humanoidsUrl, HDBInventoryListener.categories[4]);
+            saveCategory(humansUrl, HDBInventoryListener.categories[5]);
+            saveCategory(monstersUrl, HDBInventoryListener.categories[6]);
+            saveCategory(plantsUrl, HDBInventoryListener.categories[7]);
+            saveCategory(miscellaneousUrl, HDBInventoryListener.categories[8]);
+            saveCategory(animalsUrl, HDBInventoryListener.categories[9]);
             saveCategory(null, HDBInventoryListener.categories[10]);
 
             Bukkit.getConsoleSender().sendMessage("§aDownload Abgeschlossen! Alle JSON Datein wurde erfolgreich heruntergeladen.");
@@ -200,7 +200,7 @@ public class Fetcher {
         String headName = (String) jsonObject.get("name");
         textureValue = (String) jsonObject.get("value");
 
-        if(!(headName.contains(searchName))) {
+        if(!(headName.regionMatches(true, 0, searchName, 0, headName.length()))) {
             return;
         }
 

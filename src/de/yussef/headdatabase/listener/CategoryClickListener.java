@@ -93,6 +93,13 @@ public class CategoryClickListener implements Listener {
 
                     if(clickedSlot == fetcher.pageSlots[0] || clickedSlot == fetcher.pageSlots[1]) {
                         int nextPage = Integer.parseInt(ChatColor.stripColor(event.getClickedInventory().getItem(event.getSlot()).getItemMeta().getDisplayName()).replace("Seite ", ""));
+
+                        if(HDBInventoryListener.searchHeadName == null) {
+                            player.closeInventory();
+                            player.sendMessage(ConfigMessages.HDB_PREFIX + "§cEs ist ein Fehler aufgetreten. Bitte suche den Kopf erneut.");
+                            return;
+                        }
+
                         hdbInventoryListener.searchForHead(player, nextPage, HDBInventoryListener.searchHeadName, 0, '0', false);
                         return;
                     }
